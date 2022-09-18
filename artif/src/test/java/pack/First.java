@@ -1,0 +1,20 @@
+package pack;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class First {
+public static void main(String[] args) {
+	WebDriverManager.chromedriver().setup();//driver launch
+	WebDriver driver = new ChromeDriver();//chrome browser launch
+	driver.get("https://www.google.com/");//launch url
+	//WebElement e=driver.findElement(By.xpath("//input[@name='q']"));
+	//e.sendKeys("rajinikanth");
+	//e.sendKeys(Keys.ENTER);
+}
+}
